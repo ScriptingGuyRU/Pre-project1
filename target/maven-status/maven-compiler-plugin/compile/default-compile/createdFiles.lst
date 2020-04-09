@@ -1,0 +1,8 @@
+Servlets\MainServlet.class
+Servlets\TestServlet.class
+services\UserService.class
+entities\TestWriteList.class
+Servlets\RegistrationServlet.class
+Servlets\ListServlet.class
+dao\UserDAO.class
+entities\User.class
