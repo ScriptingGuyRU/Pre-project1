@@ -7,33 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/exception/DBException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/AddUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/DeleteUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/EditServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/MainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserJdbcDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserJdbcDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/AddUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/AddUserPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DeleteUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/DeleteUserPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/EditUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/EditUserPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/MainPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AddUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AddUserPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/DeleteUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/DeleteUserPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/EditUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/EditUserPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/MainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/MainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/AddUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/AddUserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/DeleteUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/DeleteUserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/EditServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/EditServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/MainServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserJdbcDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserJdbcDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/AddUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/AddUserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Servlets/DeleteUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/DeleteUserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Servlets/EditServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/EditServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Servlets/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/MainServlet.class" afterDir="false" />
@@ -258,7 +240,7 @@
       <workItem from="1586355833917" duration="1225000" />
       <workItem from="1586357447492" duration="4314000" />
       <workItem from="1586419663684" duration="34627000" />
-      <workItem from="1586507355281" duration="8580000" />
+      <workItem from="1586507355281" duration="9567000" />
     </task>
     <servers />
   </component>

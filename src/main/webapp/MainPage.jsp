@@ -43,18 +43,11 @@
 
 
 
-<form class="your-form-selector" >
-    <fieldset>
-        <legend >Действия:</legend>
 
-        <form method="get" action="/addUser"> <!--Костыль, без которого метод добавления не будет работать. Почему так - хз. -->
-            <div class="w3-container">
-            </div>
-        </form>
 
         <form method="get" action="/addUser">
             <div class="w3-container">
-                <button class="w3-button w3-cyan" type="submit">New</button>
+                <button class="w3-button w3-cyan" type="submit" style="width: 150px">New</button>
             </div>
         </form>
 
@@ -70,8 +63,7 @@
                 <button class="w3-button w3-cyan" type="submit">Edit</button>
             </div>
         </form>
-</fieldset>
-</form>
+
 
 </body>
 </html>
