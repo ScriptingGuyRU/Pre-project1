@@ -6,10 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DeleteUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/DeleteUserPage.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +222,7 @@
       <workItem from="1586355833917" duration="1225000" />
       <workItem from="1586357447492" duration="4314000" />
       <workItem from="1586419663684" duration="34627000" />
-      <workItem from="1586507355281" duration="415000" />
+      <workItem from="1586507355281" duration="1026000" />
     </task>
     <servers />
   </component>
