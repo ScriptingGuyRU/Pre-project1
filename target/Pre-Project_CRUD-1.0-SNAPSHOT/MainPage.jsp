@@ -23,6 +23,8 @@
               <th>Id</th>
               <th>Name</th>
               <th>Password</th>
+              <th></th>
+              <th></th>
          </tr>
 
       <c:forEach var="usersList" items="${users}" >
@@ -31,6 +33,31 @@
             <td>${usersList.id}</td>
             <td>${usersList.name}</td>
             <td>${usersList.password}</td>
+            <td>
+                <form method="get" action="/editUser">
+                    <div>
+                        <button type="submit">
+                            <input hidden="true" value=${usersList.id} name="id"> <!--Передаю параметры в editUserPage.jsp-->
+                            <input hidden="true" value=${usersList.name} name="name">
+                            <input hidden="true" value=${usersList.password} name="password">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Edit_Notepad_Icon.svg"
+                                 width="20px" height="20px">
+                        </button>
+                    </div>
+                </form>
+            </td>
+            <td>
+                <form method="get" action="/deleteUser">
+                    <div>
+                        <button type="submit">
+                            <img src="https://cdn1.iconfinder.com/data/icons/ios-and-android-line-set-2/52/delete__remove__trash__dustbin-512.png"
+                            style="vertical-align: middle"
+                            width="20px" height="20px">
+                            <input hidden="true" value=${usersList.id} name="id">
+                        </button>
+                    </div>
+                </form>
+            </td>
         </tr>
         </c:forEach>
 
@@ -41,29 +68,11 @@
         .w3-button {width:100px;}
     </style>
 
-
-
-
-
         <form method="get" action="/addUser">
             <div class="w3-container">
                 <button class="w3-button w3-cyan" type="submit" style="width: 150px">New</button>
             </div>
         </form>
-
-        <form method="get" action="/deleteUser">
-            <div class="w3-container">
-                <p></p>
-                <button class="w3-button w3-cyan" type="submit">Delete</button>
-            </div>
-        </form>
-
-        <form method="get" action="/editUser">
-            <div class="w3-container">
-                <button class="w3-button w3-cyan" type="submit">Edit</button>
-            </div>
-        </form>
-
 
 </body>
 </html>

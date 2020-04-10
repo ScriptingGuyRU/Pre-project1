@@ -16,9 +16,9 @@
 <body>
 
 <form action="/deleteUser" method="POST">
-    Id :<input type="text" name="id" required>
+    Id :<input type="text" name="id" value="<%= request.getParameter("id")%>" required>
     <div class="w3-container">
-        <p><button class="w3-button w3-cyan" type="submit">Accept</button></p>
+        <p><button class="w3-button w3-cyan" type="submit">Delete</button></p>
     </div>
 </form>
 

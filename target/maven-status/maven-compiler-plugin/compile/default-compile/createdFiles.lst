@@ -1,8 +1,10 @@
+exception\DBException.class
 Servlets\MainServlet.class
-Servlets\TestServlet.class
+Servlets\EditServlet.class
 services\UserService.class
-entities\TestWriteList.class
-Servlets\RegistrationServlet.class
-Servlets\ListServlet.class
+Servlets\DeleteUserServlet.class
+dao\UserHibernateDAO.class
 dao\UserDAO.class
+dao\UserJdbcDAO.class
 entities\User.class
+Servlets\AddUserServlet.class

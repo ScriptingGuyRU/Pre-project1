@@ -17,13 +17,13 @@
 
 <form action="/editUser" method="POST">
     <p>ID пользователя:</P>
-    ID :<input type="text" name="id" required>
+    ID :<input type="text" name="id" value="<%= request.getParameter("id")%>" readonly>
     <p>Новое имя:</P>
-    Name :<input type="text" name="name" required>
+    Name :<input type="text" name="name" value="<%= request.getParameter("name")%>" required>
     <p>Новый пароль:</P>
-    Password :<input type="text" name="password" required>
+    Password :<input type="text" name="password" value="<%= request.getParameter("password")%>" required>
     <div class="w3-container">
-        <p><button class="w3-button w3-cyan" type="submit">Accept</button></p>
+        <p><button class="w3-button w3-cyan" type="submit">Edit</button></p>
     </div>
 </form>
 

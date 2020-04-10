@@ -1,8 +1,10 @@
-C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\entities\TestWriteList.java
-C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\Servlets\RegistrationServlet.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\exception\DBException.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\entities\User.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\dao\UserJdbcDAO.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\dao\UserHibernateDAO.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\services\UserService.java
-C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\Servlets\ListServlet.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\Servlets\MainServlet.java
-C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\Servlets\TestServlet.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\Servlets\AddUserServlet.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\Servlets\DeleteUserServlet.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\Servlets\EditServlet.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\PreProject_CRUD\src\main\java\dao\UserDAO.java
