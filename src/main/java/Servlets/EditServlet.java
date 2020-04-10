@@ -14,10 +14,12 @@ import java.util.List;
 
 @WebServlet("/editUser")
 public class EditServlet extends HttpServlet {
+
+    private List<User> users = UserService.getAllUsers();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<User> users = UserService.getAllUsers();
         req.setAttribute("users",users);
         RequestDispatcher rd = req.getRequestDispatcher("EditUserPage.jsp");
         rd.forward(req,resp);
@@ -42,7 +44,6 @@ public class EditServlet extends HttpServlet {
 
 
         //редирект.
-        List<User> users = UserService.getAllUsers();
         req.setAttribute("users",users);
         RequestDispatcher rd = req.getRequestDispatcher("EditUserPage.jsp");
         rd.forward(req,resp);

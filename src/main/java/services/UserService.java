@@ -1,14 +1,12 @@
 package services;
 
-import dao.UserDAO;
+import dao.UserJdbcDAO;
 import entities.User;
 
 import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class UserService {
@@ -18,7 +16,7 @@ public class UserService {
 
     public static List<User> getAllUsers() {
         try {
-            return getUserDAO().getAllUsers();
+            return getUserJdbsDAO().getAllUsers();
         } catch (SQLException e) {
             e.printStackTrace();
             return null;
@@ -26,23 +24,23 @@ public class UserService {
     }
 
     public static boolean addUser(User user) {
-        return getUserDAO().addUser(user);
+        return getUserJdbsDAO().addUser(user);
     }
 
     public static void createTable() {
-        getUserDAO().createTable();
+        getUserJdbsDAO().createTable();
     }
 
     public static boolean delete(User user) {
-        return getUserDAO().delete(user);
+        return getUserJdbsDAO().delete(user);
     }
 
     public static boolean editUserById(Long id, String newName, String newPassword) {
-        return getUserDAO().editUserById(id, newName, newPassword);
+        return getUserJdbsDAO().editUserById(id, newName, newPassword);
     }
 
     public static User getUserById(Long id) {
-        return getUserDAO().getUserById(id);
+        return getUserJdbsDAO().getUserById(id);
     }
 
 
@@ -74,7 +72,7 @@ public class UserService {
         }
     }
 
-    public static UserDAO getUserDAO () {
-        return new UserDAO(getMysqlConnection());
+    public static UserJdbcDAO getUserJdbsDAO () {
+        return new UserJdbcDAO(getMysqlConnection());
     }
 }

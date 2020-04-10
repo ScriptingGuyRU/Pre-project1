@@ -16,11 +16,10 @@ import java.util.List;
 @WebServlet("/")
 public class MainServlet extends HttpServlet {
 
+    private List<User> users = UserService.getAllUsers();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-         List<User> users = UserService.getAllUsers();
-
 
         req.setAttribute("users",users);
         RequestDispatcher rd = req.getRequestDispatcher("MainPage.jsp");

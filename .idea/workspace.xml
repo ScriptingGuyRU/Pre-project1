@@ -6,7 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="" />
+    <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/UserJdbcDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/DeleteUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/EditServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/DeleteUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/DeleteUserPage.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +67,7 @@
       <list>
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -83,6 +96,7 @@
   <component name="ProjectId" id="1aG0rkB7EZm5F3gLjFj9rJLUlsx" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -222,7 +236,7 @@
       <workItem from="1586355833917" duration="1225000" />
       <workItem from="1586357447492" duration="4314000" />
       <workItem from="1586419663684" duration="34627000" />
-      <workItem from="1586507355281" duration="1026000" />
+      <workItem from="1586507355281" duration="1909000" />
     </task>
     <servers />
   </component>

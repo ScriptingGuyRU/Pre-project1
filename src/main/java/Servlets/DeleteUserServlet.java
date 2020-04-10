@@ -15,10 +15,12 @@ import java.util.List;
 
 @WebServlet("/deleteUser")
 public class DeleteUserServlet extends HttpServlet {
+
+    private List<User> users = UserService.getAllUsers();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<User> users = UserService.getAllUsers();
         req.setAttribute("users",users);
         RequestDispatcher rd = req.getRequestDispatcher("DeleteUserPage.jsp");
         rd.forward(req,resp);
@@ -42,7 +44,6 @@ public class DeleteUserServlet extends HttpServlet {
 
 
         //редирект.
-        List<User> users = UserService.getAllUsers();
         req.setAttribute("users",users);
         RequestDispatcher rd = req.getRequestDispatcher("DeleteUserPage.jsp");
         rd.forward(req,resp);
