@@ -16,18 +16,13 @@ import java.util.List;
 @WebServlet("/")
 public class MainServlet extends HttpServlet {
 
-    private List<User> users = UserService.getAllUsers();
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        UserService.createTable();
+        List<User> users = UserService.getAllUsers();
         req.setAttribute("users",users);
         RequestDispatcher rd = req.getRequestDispatcher("MainPage.jsp");
         rd.forward(req,resp);
     }
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPut(req, resp);
-    }
 }

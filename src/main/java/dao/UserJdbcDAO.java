@@ -71,32 +71,33 @@ public class UserJdbcDAO implements UserDAO{
         }
     }
 
-    public boolean delete(User user) {
+    public boolean delete(Long id) {
         try {
-            if (!validateUser(user)) {
-                return false;
-            }
+            validateUser(getUserById(id));
 
-            String sql = "DELETE FROM pre_project_crud.userstable WHERE name = ? and password = ?";
+            String sql = "DELETE FROM pre_project_crud.userstable WHERE id = ?";
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1,user.getName());
-            ps.setString(2,user.getPassword());
+            ps.setLong(1,id);
             ps.executeUpdate();
             connection.commit();
             ps.close();
             return true;
+        } catch (NullPointerException e) {
+            return false;
         } catch (SQLException e) {
             return false;
         }
     }
 
-    public boolean editUserById(Long id, String newName, String newPassword) {
+    public boolean editUser(User user, String newName, String newPassword) {
         try {
-            String sql = "UPDATE pre_project_crud.userstable SET name = ?, password = ? WHERE id = ?";
+            String sql = "UPDATE pre_project_crud.userstable SET name = ?, password = ? WHERE id = ? and name = ? and password = ?";
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.setString(1,newName);
             ps.setString(2,newPassword);
-            ps.setLong(3,id);
+            ps.setLong(3,user.getId());
+            ps.setString(4,user.getName());
+            ps.setString(5,user.getPassword());
             ps.executeUpdate();
             connection.commit();
             ps.close();

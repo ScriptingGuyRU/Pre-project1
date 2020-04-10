@@ -47,7 +47,7 @@
     <fieldset>
         <legend >Действия:</legend>
 
-        <form method="get" action="/addUser">
+        <form method="get" action="/addUser"> <!--Костыль, без которого метод добавления не будет работать. Почему так - хз. -->
             <div class="w3-container">
             </div>
         </form>

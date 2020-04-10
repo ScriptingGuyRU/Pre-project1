@@ -1,6 +1,7 @@
 package Servlets;
 
 import entities.User;
+import exception.DBException;
 import services.UserService;
 
 import javax.servlet.RequestDispatcher;
@@ -12,41 +13,39 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @WebServlet("/addUser")
 public class AddUserServlet extends HttpServlet {
 
-    private List<User> users = UserService.getAllUsers();
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-
-        req.setAttribute("users",users);
         RequestDispatcher rd = req.getRequestDispatcher("AddUserPage.jsp");
-        rd.forward(req,resp);
+        rd.forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String name = req.getParameter("name");
-        String password = req.getParameter("password");
+        try {
+            String name = req.getParameter("name");
+            String password = req.getParameter("password");
 
-        User user = new User (name,password);
+            if (name == null || password == null) {
+                throw new DBException();
+            }
 
+            User user = new User(name, password);
 
-        if (UserService.addUser(user)) {
-            req.setAttribute("result", "Succses");
-        } else {
-            req.setAttribute("result", "Oops, there was an error somewhere");
+            if (UserService.addUser(user)) {
+                resp.setStatus(200);
+                resp.sendRedirect("/");
+            } else {
+                throw new DBException();
+            }
+        } catch (DBException e) {
+            resp.setStatus(403);
+            resp.sendRedirect("/");
         }
-
-
-
-        //редирект.
-        req.setAttribute("users",users);
-        RequestDispatcher rd = req.getRequestDispatcher("AddUserPage.jsp");
-        rd.forward(req,resp);
     }
 }

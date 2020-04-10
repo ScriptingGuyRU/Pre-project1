@@ -11,9 +11,6 @@ import java.util.List;
 
 public class UserService {
 
-    public UserService() {
-    }
-
     public static List<User> getAllUsers() {
         try {
             return getUserJdbsDAO().getAllUsers();
@@ -31,12 +28,12 @@ public class UserService {
         getUserJdbsDAO().createTable();
     }
 
-    public static boolean delete(User user) {
-        return getUserJdbsDAO().delete(user);
+    public static boolean delete(Long id) {
+        return getUserJdbsDAO().delete(id);
     }
 
-    public static boolean editUserById(Long id, String newName, String newPassword) {
-        return getUserJdbsDAO().editUserById(id, newName, newPassword);
+    public static boolean editUser(User user, String newName, String newPassword) {
+        return getUserJdbsDAO().editUser(user, newName, newPassword);
     }
 
     public static User getUserById(Long id) {

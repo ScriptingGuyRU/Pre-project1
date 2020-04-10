@@ -12,9 +12,9 @@ public interface UserDAO {
 
     public void createTable();
 
-    public boolean delete(User user);
+    public boolean delete(Long id);
 
-    public boolean editUserById(Long id, String newName, String newPassword);
+    public boolean editUser(User user, String newName, String newPassword);
 
     public boolean validateUser(User user);
 
