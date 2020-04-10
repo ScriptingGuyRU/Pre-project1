@@ -1,10 +1,21 @@
 package entities;
 
+import javax.persistence.*;
 import java.util.Objects;
 
+@Entity
+@Table(name = "userstable", schema = "pre_project_crud")
 public class User {
+
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "password")
     private String password;
 
     public User(Long id, String name, String password) {

@@ -1,5 +1,6 @@
 package Servlets;
 
+import dao.UserDAO;
 import entities.User;
 import exception.DBException;
 import services.UserService;
@@ -16,6 +17,8 @@ import java.util.concurrent.TimeUnit;
 
 @WebServlet("/editUser")
 public class EditServlet extends HttpServlet {
+
+    private UserService userService = UserService.getInstance();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -35,9 +38,9 @@ public class EditServlet extends HttpServlet {
                 throw new DBException();
             }
 
-            User user = UserService.getUserById(id);
+            User user = userService.getUserById(id);
 
-            if (UserService.editUser(user, name, password)) {
+            if (userService.editUser(user, name, password)) {
                 resp.setStatus(200);
                 resp.sendRedirect("/");
             } else {

@@ -1,5 +1,6 @@
 package Servlets;
 
+import dao.UserDAO;
 import entities.User;
 import services.UserService;
 
@@ -16,10 +17,12 @@ import java.util.List;
 @WebServlet("/")
 public class MainServlet extends HttpServlet {
 
+    private UserService userService = UserService.getInstance();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        UserService.createTable();
-        List<User> users = UserService.getAllUsers();
+        userService.createTable();
+        List<User> users = userService.getAllUsers();
         req.setAttribute("users",users);
         RequestDispatcher rd = req.getRequestDispatcher("MainPage.jsp");
         rd.forward(req,resp);

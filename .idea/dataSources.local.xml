@@ -13,8 +13,8 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="db_example" />
-            <name qname="prepojectcrud" />
             <name qname="pre_project_crud" />
+            <name qname="prepojectcrud" />
           </node>
         </introspection-scope>
       </schema-mapping>

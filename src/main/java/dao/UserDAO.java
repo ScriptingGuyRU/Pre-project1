@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface UserDAO {
-    public List<User> getAllUsers() throws SQLException;
+    public List<User> getAllUsers();
 
     public boolean addUser(User user);
 

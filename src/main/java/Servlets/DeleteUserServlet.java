@@ -1,5 +1,6 @@
 package Servlets;
 
+import dao.UserDAO;
 import entities.User;
 import exception.DBException;
 import services.UserService;
@@ -19,6 +20,8 @@ import java.util.concurrent.TimeUnit;
 @WebServlet("/deleteUser")
 public class DeleteUserServlet extends HttpServlet {
 
+    private UserService userService = UserService.getInstance();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         RequestDispatcher rd = req.getRequestDispatcher("DeleteUserPage.jsp");
@@ -31,7 +34,7 @@ public class DeleteUserServlet extends HttpServlet {
         try {
             Long id = Long.valueOf(req.getParameter("id"));
 
-            if (UserService.delete(id)) {
+            if (userService.delete(id)) {
                 resp.setStatus(200);
                 resp.sendRedirect("/");
             } else {

@@ -17,7 +17,7 @@ public class UserJdbcDAO implements UserDAO{
     }
 
 
-    public List<User> getAllUsers() throws SQLException {
+    public List<User> getAllUsers() {
         try {
             Statement statement = connection.createStatement();
             List<User> listUsers = new ArrayList<>();
@@ -34,7 +34,11 @@ public class UserJdbcDAO implements UserDAO{
             statement.close();
             return listUsers;
         } catch (SQLException e) {
-            connection.rollback();
+            try {
+                connection.rollback();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
             e.printStackTrace();
             return null;
         }
