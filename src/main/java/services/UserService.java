@@ -41,44 +41,17 @@ public class UserService {
         return userDAO.delete(id);
     }
 
-    public boolean editUser(User user, String newName, String newPassword) {
-        return userDAO.editUser(user, newName, newPassword);
+    public boolean editUser(User user, String newName, String newPassword, String newRole) {
+        return userDAO.editUser(user, newName, newPassword,newRole);
     }
 
     public User getUserById(Long id) {
         return userDAO.getUserById(id);
     }
 
+    public User getUserByNameAndPassword(String name, String password) {
+        return userDAO.getUserByNameAndPassword(name,password);
+    }
 
 
-
-
-
-//    private static Connection getMysqlConnection() {
-//        try {
-//            DriverManager.registerDriver((Driver) Class.forName("com.mysql.cj.jdbc.Driver").newInstance());
-//
-//            StringBuilder url = new StringBuilder();
-//
-//            url.
-//                    append("jdbc:mysql://").        //db type
-//                    append("localhost:").           //host name
-//                    append("3306/").                //port
-//                    append("db_example?").          //db name
-//                    append("user=root&").          //login
-//                    append("password=787898").       //password
-//                    append("&serverTimezone=UTC");   //setup server time)
-//
-//            Connection connection = DriverManager.getConnection(url.toString());
-//            connection.setAutoCommit(false);
-//            return connection;
-//        } catch (SQLException | InstantiationException | IllegalAccessException | ClassNotFoundException e) {
-//            e.printStackTrace();
-//            throw new IllegalStateException();
-//        }
-//    }
-//
-//    public static UserJdbcDAO getUserJdbsDAO () {
-//        return new UserJdbcDAO(getMysqlConnection());
-//    }
 }

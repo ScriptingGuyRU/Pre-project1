@@ -18,7 +18,7 @@ public class UserDaoFactory {
             properties.load(in);
 
             switch (properties.getProperty("type")) {
-                case "JDBS":
+                case "JDBC":
                     return DBHelper.getUserJdbsDAO();
                 case "Hibernate":
                     return new UserHibernateDAO(DBHelper.getSessionFactory());

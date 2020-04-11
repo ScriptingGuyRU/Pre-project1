@@ -63,14 +63,15 @@ public class UserHibernateDAO implements UserDAO {
     }
 
     @Override
-    public boolean editUser(User user, String newName, String newPassword) {
+    public boolean editUser(User user, String newName, String newPassword, String newRole) {
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
-            String hql = "Update User SET name = :name, password = :password WHERE id = :id";
+            String hql = "Update User SET name = :name, password = :password, role = :role WHERE id = :id";
             session.createQuery(hql).
                     setParameter("name", newName).
                     setParameter("password", newPassword).
+                    setParameter("role",newRole).
                     setParameter("id", user.getId()).
                     executeUpdate();
             transaction.commit();
@@ -116,5 +117,29 @@ public class UserHibernateDAO implements UserDAO {
         transaction.commit();
         session.close();
         return user;
+    }
+
+    @Override
+    public User getUserByNameAndPassword(String name, String password) {
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            User user = (User) session.createQuery("FROM User WHERE name = :name and password = :password").
+                    setParameter("name", name).
+                    setParameter("password", password).
+                    list().
+                    get(0);
+//            Query query = session.createQuery("FROM User WHERE name = :name and password = :password");
+//            query.setParameter("name",name);
+//            query.setParameter("password",password);
+//            User user = (User) query.list().get(0);
+
+            transaction.commit();
+            session.close();
+            return user;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

@@ -14,9 +14,11 @@ public interface UserDAO {
 
     public boolean delete(Long id);
 
-    public boolean editUser(User user, String newName, String newPassword);
+    public boolean editUser(User user, String newName, String newPassword, String newRole);
 
     public boolean validateUser(User user);
 
     public User getUserById(Long id);
+
+    public User getUserByNameAndPassword(String name, String password);
 }

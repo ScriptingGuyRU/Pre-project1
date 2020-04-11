@@ -28,7 +28,8 @@ public class UserJdbcDAO implements UserDAO{
                 listUsers.add(new User(
                         resultSet.getLong("id"),
                         resultSet.getString("name"),
-                        resultSet.getString("password")));
+                        resultSet.getString("password"),
+                        resultSet.getString("role")));
             }
             connection.commit();
             statement.close();
@@ -46,10 +47,11 @@ public class UserJdbcDAO implements UserDAO{
 
     public boolean addUser(User user)  {
         try{
-            String sql ="INSERT INTO pre_project_crud.userstable SET name = ?, password = ?";
+            String sql ="INSERT INTO pre_project_crud.userstable SET name = ?, password = ?, role = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,user.getName());
             preparedStatement.setString(2,user.getPassword());
+            preparedStatement.setString(3,user.getRole());
             preparedStatement.executeUpdate();
             connection.commit();
             preparedStatement.close();
@@ -67,7 +69,7 @@ public class UserJdbcDAO implements UserDAO{
     public void createTable() {
         try {
             Statement statement = connection.createStatement();
-            String sql = "CREATE TABLE IF NOT EXISTS pre_project_crud.UsersTable (id bigint auto_increment, name varchar(50), password varchar(50), primary key(id))";
+            String sql = "CREATE TABLE IF NOT EXISTS pre_project_crud.UsersTable (id bigint auto_increment, name varchar(50), password varchar(50), role varchar(50), primary key(id))";
             statement.execute(sql);
             statement.close();
         } catch (SQLException e) {
@@ -93,15 +95,16 @@ public class UserJdbcDAO implements UserDAO{
         }
     }
 
-    public boolean editUser(User user, String newName, String newPassword) {
+    public boolean editUser(User user, String newName, String newPassword, String newRole) {
         try {
-            String sql = "UPDATE pre_project_crud.userstable SET name = ?, password = ? WHERE id = ? and name = ? and password = ?";
+            String sql = "UPDATE pre_project_crud.userstable SET name = ?, password = ?, role = ? WHERE id = ? and name = ? and password = ?";
             PreparedStatement ps = connection.prepareStatement(sql);
             ps.setString(1,newName);
             ps.setString(2,newPassword);
-            ps.setLong(3,user.getId());
-            ps.setString(4,user.getName());
-            ps.setString(5,user.getPassword());
+            ps.setString(3,newRole);
+            ps.setLong(4,user.getId());
+            ps.setString(5,user.getName());
+            ps.setString(6,user.getPassword());
             ps.executeUpdate();
             connection.commit();
             ps.close();
@@ -145,7 +148,8 @@ public class UserJdbcDAO implements UserDAO{
 
                 String name = resultSet.getString("name");
                 String password = resultSet.getString("password");
-                User user = new User(id, name, password);
+                String role = resultSet.getString("role");
+                User user = new User(id, name, password, role);
                 connection.commit();
                 ps.close();
                 return user;
@@ -158,5 +162,33 @@ public class UserJdbcDAO implements UserDAO{
             e.printStackTrace();
             return null;
         }
+    }
+
+    @Override
+    public User getUserByNameAndPassword(String name, String password) {
+        try{
+            String sql = "Select * from pre_project_crud.userstable where name = ? and password = ?";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1,name);
+            ps.setString(2,password);
+            ResultSet resultSet = ps.executeQuery();
+
+            if (resultSet.next()) {
+                Long id = resultSet.getLong("id");
+                String role = resultSet.getString("role");
+                User user = new User(id,name,password,role);
+                connection.commit();
+                ps.close();
+                return user;
+            }
+        } catch (SQLException e) {
+            try {
+                connection.rollback();
+                return null;
+            } catch (SQLException ex) {
+                return null;
+            }
+        }
+        return null;
     }
 }
