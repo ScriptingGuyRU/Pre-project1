@@ -2,6 +2,7 @@ package dao;
 
 import entities.User;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -15,51 +16,105 @@ public class UserHibernateDAO implements UserDAO {
 
     public UserHibernateDAO(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
-        System.out.println("Конструктор =" + sessionFactory.isClosed());
     }
 
     @Override
     public List<User> getAllUsers() {
         Session session = sessionFactory.openSession();
-        System.out.println("GetAll 1) "+session.isConnected());
         Transaction transaction = session.beginTransaction();
-        System.out.println("GetAll 2) "+session.isConnected());
         List<User> carsList = session.createQuery("FROM User").list();
-        System.out.println("GetAll 3) "+session.isConnected());
         transaction.commit();
-        System.out.println("GetAll 4) "+session.isConnected());
         session.close();
-        System.out.println("GetAll 5) "+session.isConnected());
         return carsList;
     }
 
     @Override
     public boolean addUser(User user) {
-        return false;
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            session.save(user);
+            transaction.commit();
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     @Override
     public void createTable() {
-
+        // DB automatic create in DBHelper.
     }
 
     @Override
     public boolean delete(Long id) {
-        return false;
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            String hql = "Delete from User WHERE id = :id";
+            session.createQuery(hql).setParameter("id",id).executeUpdate();
+            transaction.commit();
+            session.close();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     @Override
     public boolean editUser(User user, String newName, String newPassword) {
-        return false;
+        try {
+            Session session = sessionFactory.openSession();
+            Transaction transaction = session.beginTransaction();
+            String hql = "Update User SET name = :name, password = :password WHERE id = :id";
+            session.createQuery(hql).
+                    setParameter("name", newName).
+                    setParameter("password", newPassword).
+                    setParameter("id", user.getId()).
+                    executeUpdate();
+            transaction.commit();
+            session.close();
+            return true;
+        }catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     @Override
     public boolean validateUser(User user) {
-        return false;
+        try {
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        String hql = "FROM User where id = :id, name = :name, password = :password";
+        Query query = session.createQuery(hql).
+                setParameter("id", user.getId()).
+                setParameter("name", user.getName()).
+                setParameter("password", user.getPassword());
+
+        if(query.list().isEmpty()) {
+            transaction.commit();
+            session.close();
+            return true;
+        }
+
+            transaction.commit();
+            session.close();
+            return false;
+        } catch (Exception e){
+            return false;
+        }
     }
 
     @Override
     public User getUserById(Long id) {
-        return null;
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        User user = (User) session.createQuery("FROM User WHERE id = :id")
+                .setParameter("id", id).list().get(0); //Так как id уникален, то значение будет только одно
+        transaction.commit();
+        session.close();
+        return user;
     }
 }
