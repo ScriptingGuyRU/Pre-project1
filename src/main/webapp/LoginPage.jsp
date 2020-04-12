@@ -12,11 +12,9 @@
 </head>
 <body>
     <form action="/" method="post">
-<%--        <p>${status}</p>--%>
-        <p> Enter name:</p>
-        <input type="text" name="name">
-        <p> password:</p>
-        <input type="text" name="password">
+        <p>${status}</p>
+        <p> Enter name:<input type="text" name="name"></p>
+        <p> password:<input type="text" name="password"></p>
         <button type="submit">Log in</button>
     </form>
 </body>

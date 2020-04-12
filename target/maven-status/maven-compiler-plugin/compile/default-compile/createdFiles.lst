@@ -8,7 +8,9 @@ util\DBHelper.class
 Servlets\Admin\EditServlet.class
 Servlets\Admin\MainServlet.class
 dao\UserDaoFactory.class
+Servlets\LogOutServlet.class
 dao\UserHibernateDAO.class
 dao\UserDAO.class
 entities\User.class
 Servlets\LoginServlet.class
+filter\UserFilter.class

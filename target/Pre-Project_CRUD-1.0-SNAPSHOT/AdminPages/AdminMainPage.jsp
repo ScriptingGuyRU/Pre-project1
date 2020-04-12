@@ -76,5 +76,10 @@
             </div>
         </form>
 
+    <form action="/logout" method="post">
+        <a href="/logout"></a>
+        <button type="submit">LogOut</button>
+    </form>
+
 </body>
 </html>

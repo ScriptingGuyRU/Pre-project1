@@ -2,6 +2,7 @@ package Servlets;
 
 import entities.User;
 import exception.DBException;
+import org.hibernate.Session;
 import services.UserService;
 
 import javax.servlet.RequestDispatcher;
@@ -10,6 +11,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet("/")
@@ -40,15 +42,22 @@ public class LoginServlet extends HttpServlet {
                 throw new DBException();
             }
 
-            if (user.getRole().equals("admin")) {
-                resp.setStatus(200);
-                resp.sendRedirect("/admin/");
-            }
+            HttpSession session = req.getSession();
+            session.setAttribute("name",name);
+            session.setAttribute("passwprd",password);
+            session.setAttribute("role",user.getRole());
+//
+//            if (user.getRole().equals("admin")) {
+//                resp.setStatus(200);
+//                resp.sendRedirect("/admin/");
+//            }
+//
+//            if (user.getRole().equals("user")) {
+//                resp.setStatus(200);
+//                resp.sendRedirect("/user/");
+//            }
 
-            if (user.getRole().equals("user")) {
-                resp.setStatus(200);
-                resp.sendRedirect("/user/");
-            }
+            resp.sendRedirect("/admin/");
 
         } catch (Exception e) {
             e.printStackTrace();

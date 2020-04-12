@@ -11,10 +11,12 @@
     <title>Users Main Page</title>
 </head>
 <body>
+<p> Hello: <%= request.getSession().getAttribute("name")%> </p>
     <p>Date login: <%= new Date().toString() %></p>
-    <form action="/login" method="get">
-        <a href="/login"></a>
+    <form action="/logout" method="post">
+        <a href="/logout"></a>
         <button type="submit">LogOut</button>
     </form>
 </body>
 </html>
+
