@@ -2,7 +2,6 @@ package Servlets;
 
 import entities.User;
 import exception.DBException;
-import org.hibernate.Session;
 import services.UserService;
 
 import javax.servlet.RequestDispatcher;
@@ -44,18 +43,8 @@ public class LoginServlet extends HttpServlet {
 
             HttpSession session = req.getSession();
             session.setAttribute("name",name);
-            session.setAttribute("passwprd",password);
+            session.setAttribute("password",password);
             session.setAttribute("role",user.getRole());
-//
-//            if (user.getRole().equals("admin")) {
-//                resp.setStatus(200);
-//                resp.sendRedirect("/admin/");
-//            }
-//
-//            if (user.getRole().equals("user")) {
-//                resp.setStatus(200);
-//                resp.sendRedirect("/user/");
-//            }
 
             resp.sendRedirect("/admin/");
 

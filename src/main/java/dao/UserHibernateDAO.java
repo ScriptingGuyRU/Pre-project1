@@ -129,10 +129,7 @@ public class UserHibernateDAO implements UserDAO {
                     setParameter("password", password).
                     list().
                     get(0);
-//            Query query = session.createQuery("FROM User WHERE name = :name and password = :password");
-//            query.setParameter("name",name);
-//            query.setParameter("password",password);
-//            User user = (User) query.list().get(0);
+
 
             transaction.commit();
             session.close();

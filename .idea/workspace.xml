@@ -2,28 +2,44 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="PreProject_CRUD:war" />
+      <artifact name="Pre-Project_CRUD:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/LogOutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/UserFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f0de499-6366-486d-ada3-66339d17ead8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4f0de499-6366-486d-ada3-66339d17ead8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/Admin/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/Admin/AddUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/Admin/DeleteUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/Admin/DeleteUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/Admin/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/Admin/EditServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/Admin/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/Admin/MainServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/AdminPages/AdminMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/AdminPages/AdminMainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/LoginPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LoginPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/UsersPages/UserMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/UsersPages/UserMainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserHibernateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserHibernateDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserJdbcDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserJdbcDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AdminPages/AdminMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AdminPages/AdminMainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/LoginPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/LoginPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/UsersPages/UserMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/UsersPages/UserMainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/AddUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/AddUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/DeleteUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/DeleteUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/EditServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/EditServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/MainServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserHibernateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserHibernateDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserJdbcDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserJdbcDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/Admin/AddUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/Admin/AddUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/Admin/DeleteUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/Admin/DeleteUserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/Admin/EditServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/Admin/EditServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/Admin/MainServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/Admin/MainServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/LoginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserHibernateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserHibernateDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserJdbcDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserJdbcDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +121,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Web/web4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -134,7 +150,7 @@
       <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="PreProject_CRUD:war">
+        <artifact name="Pre-Project_CRUD:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -144,6 +160,7 @@
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_PreProject_CRUD" />
         <option name="DEPLOY_TOMCAT_APPS" value="true" />
         <option name="HTTP_PORT" value="8080" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -202,6 +219,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="PreProject_CRUD:war" />
+          <artifact name="Pre-Project_CRUD:war" />
         </option>
       </method>
     </configuration>
@@ -245,6 +263,7 @@
       <workItem from="1586593361751" duration="4582000" />
       <workItem from="1586612164424" duration="5147000" />
       <workItem from="1586690272769" duration="10428000" />
+      <workItem from="1586783480473" duration="1506000" />
     </task>
     <servers />
   </component>
@@ -274,6 +293,11 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/UserDaoFactory.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

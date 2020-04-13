@@ -1,6 +1,5 @@
 package dao;
 
-import entities.User;
 import util.DBHelper;
 
 import java.io.FileInputStream;
@@ -13,7 +12,7 @@ public class UserDaoFactory {
     public static UserDAO getUserDao () {
         try {
             Properties properties = new Properties();
-            String path = "C:\\Users\\pc\\Desktop\\JM\\PreProject_CRUD\\PreProject_CRUD\\src\\main\\resources\\TypeDB.properties";
+            String path = "C:\\Users\\pc\\Desktop\\JM\\PreProject_CRUD\\Pre-project_CRUD\\Pre-project_CRUD\\src\\main\\resources\\TypeDB.properties";
             FileInputStream in = new FileInputStream(path);
             properties.load(in);
 
