@@ -5,19 +5,17 @@ import entities.User;
 import java.util.List;
 
 public interface UserDAO {
-    public List<User> getAllUsers();
+    List<User> getAllUsers();
 
-    public boolean addUser(User user);
+    boolean addUser(User user);
 
-    public void createTable();
+    boolean delete(Long id);
 
-    public boolean delete(Long id);
+    boolean editUser(User user);
 
-    public boolean editUser(User user, String newName, String newPassword, String newRole);
+    boolean validateUser(User user);
 
-    public boolean validateUser(User user);
+    User getUserById(Long id);
 
-    public User getUserById(Long id);
-
-    public User getUserByNameAndPassword(String name, String password);
+    User getUserByNameAndPassword(String name, String password);
 }

@@ -41,10 +41,7 @@ public class UserHibernateDAO implements UserDAO {
         }
     }
 
-    @Override
-    public void createTable() {
-        // DB automatic create in DBHelper.
-    }
+
 
     @Override
     public boolean delete(Long id) {
@@ -63,15 +60,15 @@ public class UserHibernateDAO implements UserDAO {
     }
 
     @Override
-    public boolean editUser(User user, String newName, String newPassword, String newRole) {
+    public boolean editUser(User user) {
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
             String hql = "Update User SET name = :name, password = :password, role = :role WHERE id = :id";
             session.createQuery(hql).
-                    setParameter("name", newName).
-                    setParameter("password", newPassword).
-                    setParameter("role",newRole).
+                    setParameter("name", user.getName()).
+                    setParameter("password", user.getPassword()).
+                    setParameter("role", user.getRole()).
                     setParameter("id", user.getId()).
                     executeUpdate();
             transaction.commit();
@@ -94,7 +91,7 @@ public class UserHibernateDAO implements UserDAO {
                 setParameter("name", user.getName()).
                 setParameter("password", user.getPassword());
 
-        if(query.list().isEmpty()) {
+        if(query.list().isEmpty()) { //get
             transaction.commit();
             session.close();
             return true;
@@ -113,14 +110,14 @@ public class UserHibernateDAO implements UserDAO {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         User user = (User) session.createQuery("FROM User WHERE id = :id")
-                .setParameter("id", id).list().get(0); //Так как id уникален, то значение будет только одно
+                .setParameter("id", id).list().get(0); //Так как id уникален, то значение будет только одно через get
         transaction.commit();
         session.close();
         return user;
     }
 
     @Override
-    public User getUserByNameAndPassword(String name, String password) {
+    public User getUserByNameAndPassword(String name, String password) { //Сделать как в JDBC
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();

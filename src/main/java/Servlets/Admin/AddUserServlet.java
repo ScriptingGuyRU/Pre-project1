@@ -26,25 +26,18 @@ public class AddUserServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        try {
-            String name = req.getParameter("name");
-            String password = req.getParameter("password");
-            String role = req.getParameter("role");
+        String name = req.getParameter("name");
+        String password = req.getParameter("password");
+        String role = req.getParameter("role");
 
-            if (name == null || password == null) {
-                throw new DBException();
-            }
+        if (name == null || password == null) {
+            resp.sendRedirect("/admin/");
+        }
 
-            User user = new User(name, password, role);
-
-            if (userService.addUser(user)) {
-                resp.setStatus(200);
-                resp.sendRedirect("/admin/");
-            } else {
-                throw new DBException();
-            }
-        } catch (DBException e) {
-            resp.setStatus(403);
+        if (userService.addUser( new User(name, password, role))) {
+            resp.setStatus(200);
+            resp.sendRedirect("/admin/");
+        } else {
             resp.sendRedirect("/admin/");
         }
     }

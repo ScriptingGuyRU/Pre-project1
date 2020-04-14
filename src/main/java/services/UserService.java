@@ -33,16 +33,12 @@ public class UserService {
         return userDAO.addUser(user);
     }
 
-    public void createTable() {
-        userDAO.createTable();
-    }
-
     public boolean delete(Long id) {
         return userDAO.delete(id);
     }
 
-    public boolean editUser(User user, String newName, String newPassword, String newRole) {
-        return userDAO.editUser(user, newName, newPassword,newRole);
+    public boolean editUser(User user) {
+        return userDAO.editUser(user);
     }
 
     public User getUserById(Long id) {

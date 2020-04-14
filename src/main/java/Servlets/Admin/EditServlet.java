@@ -26,28 +26,20 @@ public class EditServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
-        try {
+
             Long id = Long.parseLong(req.getParameter("id"));
             String name = req.getParameter("name");
             String password = req.getParameter("password");
             String role = req.getParameter("role");
 
-            if (id == null || name == null || password == null){
-                throw new DBException();
-            }
-
-            User user = userService.getUserById(id);
-
-            if (userService.editUser(user, name, password, role)) {
+            if (id != null && name != null && password != null){
+                userService.editUser(new User(id,name,password,role));
                 resp.setStatus(200);
                 resp.sendRedirect("/admin/");
             } else {
-                throw new DBException();
+                resp.setStatus(403);
+                resp.sendRedirect("/admin/");
             }
 
-        } catch (DBException|NumberFormatException e) {
-            resp.setStatus(403);
-            resp.sendRedirect("/admin/");
-        }
     }
 }

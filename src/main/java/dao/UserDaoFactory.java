@@ -5,15 +5,16 @@ import util.DBHelper;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
+
 
 public class UserDaoFactory {
 
     public static UserDAO getUserDao () {
         try {
             Properties properties = new Properties();
-            String path = "C:\\Users\\pc\\Desktop\\JM\\PreProject_CRUD\\Pre-project_CRUD\\Pre-project_CRUD\\src\\main\\resources\\TypeDB.properties";
-            FileInputStream in = new FileInputStream(path);
+            InputStream in = UserDaoFactory.class.getClassLoader().getResourceAsStream("TypeDB.properties");
             properties.load(in);
 
             switch (properties.getProperty("type")) {
@@ -26,6 +27,7 @@ public class UserDaoFactory {
                     throw new Exception();
             }
         } catch (FileNotFoundException e) {
+            System.out.println("********************Файл не найден***********************");
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();

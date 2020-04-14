@@ -27,31 +27,21 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
-        try {
+
             String name = req.getParameter("name");
             String password = req.getParameter("password");
 
-            if (name == null || password == null) {
-                throw new DBException();
-            }
-
             User user = userService.getUserByNameAndPassword(name, password);
 
-            if (user == null) { //Если нет такого юзера, то метод вернет null
-                throw new DBException();
+            if (user != null) {
+                HttpSession session = req.getSession();
+                session.setAttribute("name",name);
+                session.setAttribute("password",password);
+                session.setAttribute("role",user.getRole());
+                resp.sendRedirect("/loginFilter/");
+            } else {
+                req.setAttribute("status","Oops, incorrect value");
+                resp.setStatus(403);
             }
-
-            HttpSession session = req.getSession();
-            session.setAttribute("name",name);
-            session.setAttribute("password",password);
-            session.setAttribute("role",user.getRole());
-
-            resp.sendRedirect("/admin/");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            req.setAttribute("status","Oops, incorrect value");
-            resp.setStatus(403);
-        }
     }
 }

@@ -45,7 +45,7 @@ public class UserJdbcDAO implements UserDAO{
 
     public boolean addUser(User user)  {
         try{
-            String sql ="INSERT INTO pre_project_crud.userstable SET name = ?, password = ?, role = ?";
+            String sql ="INSERT INTO pre_project_crud.userstable SET name = ?, password = ?, role = ?";  //Уникальность User
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1,user.getName());
             preparedStatement.setString(2,user.getPassword());
@@ -93,16 +93,14 @@ public class UserJdbcDAO implements UserDAO{
         }
     }
 
-    public boolean editUser(User user, String newName, String newPassword, String newRole) {
+    public boolean editUser(User user) {
         try {
-            String sql = "UPDATE pre_project_crud.userstable SET name = ?, password = ?, role = ? WHERE id = ? and name = ? and password = ?";
+            String sql = "UPDATE pre_project_crud.userstable SET name = ?, password = ?, role = ? WHERE id = ?";
             PreparedStatement ps = connection.prepareStatement(sql);
-            ps.setString(1,newName);
-            ps.setString(2,newPassword);
-            ps.setString(3,newRole);
+            ps.setString(1,user.getName());
+            ps.setString(2,user.getPassword());
+            ps.setString(3,user.getPassword());
             ps.setLong(4,user.getId());
-            ps.setString(5,user.getName());
-            ps.setString(6,user.getPassword());
             ps.executeUpdate();
             connection.commit();
             ps.close();

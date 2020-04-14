@@ -62,10 +62,14 @@ public class DBHelper {
 
         configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         configuration.setProperty("hibernate.connection.driver_class", "com.mysql.cj.jdbc.Driver");
-        configuration.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/pre_project_crud?serverTimezone=UTC");
+        configuration.setProperty("hibernate.connection.url", "jdbc:mysql://localhost:3306/test?serverTimezone=UTC");
         configuration.setProperty("hibernate.connection.username", "root");
         configuration.setProperty("hibernate.connection.password", "787898");
         configuration.setProperty("hibernate.show_sql", "true");
+        //Что бы убрать ? в url
+        configuration.setProperty("hibernate.connection.CharSet", "utf8");
+        configuration.setProperty("hibernate.connection.characterEncoding", "utf8");
+        configuration.setProperty("hibernate.connection.useUnicode", "true");
 //        configuration.setProperty("hibernate.hbm2ddl.auto", "create");
         return configuration;
     }

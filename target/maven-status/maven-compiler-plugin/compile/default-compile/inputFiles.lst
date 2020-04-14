@@ -1,11 +1,13 @@
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\dao\UserJdbcDAO.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\Admin\AddUserServlet.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\Admin\AdminMainServlet.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\Admin\DeleteUserServlet.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\util\DBHelper.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\filter\LoginFilter.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\filter\AdminFilter.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\LogOutServlet.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\dao\UserHibernateDAO.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\services\UserService.java
-C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\Admin\MainServlet.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\dao\UserDaoFactory.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\entities\User.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\exception\DBException.java
@@ -13,4 +15,5 @@ C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\mai
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\Admin\EditServlet.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\LoginServlet.java
 C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\filter\UserFilter.java
-C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\User\MainServlet.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\User\UserMainServlet.java
+C:\Users\pc\Desktop\JM\PreProject_CRUD\Pre-project_CRUD\Pre-project_CRUD\src\main\java\Servlets\LoginFilterServlet.java

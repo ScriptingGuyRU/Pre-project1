@@ -22,7 +22,7 @@
     Name :<input type="text" name="name" value="<%= request.getParameter("name")%>" required>
     <p>Новый пароль:</P>
     Password :<input type="text" name="password" value="<%= request.getParameter("password")%>" required>
-    <select size="2" name="role">
+    <select name="role">
         <option disabled>Role :</option>
         <option selected value="admin">Admin</option>
         <option selected value="user">User</option>
