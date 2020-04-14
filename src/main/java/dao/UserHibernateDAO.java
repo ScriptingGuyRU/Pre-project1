@@ -6,6 +6,7 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -110,23 +111,22 @@ public class UserHibernateDAO implements UserDAO {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         User user = (User) session.createQuery("FROM User WHERE id = :id")
-                .setParameter("id", id).list().get(0); //Так как id уникален, то значение будет только одно через get
+                .setParameter("id", id).uniqueResult();
+
         transaction.commit();
         session.close();
         return user;
     }
 
     @Override
-    public User getUserByNameAndPassword(String name, String password) { //Сделать как в JDBC
+    public User getUserByNameAndPassword(String name, String password) {
         try {
             Session session = sessionFactory.openSession();
             Transaction transaction = session.beginTransaction();
             User user = (User) session.createQuery("FROM User WHERE name = :name and password = :password").
                     setParameter("name", name).
                     setParameter("password", password).
-                    list().
-                    get(0);
-
+                    uniqueResult();
 
             transaction.commit();
             session.close();

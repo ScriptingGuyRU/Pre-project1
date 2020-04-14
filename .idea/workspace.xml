@@ -7,59 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/LoginFilterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/AdminFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/LoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f0de499-6366-486d-ada3-66339d17ead8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f0de499-6366-486d-ada3-66339d17ead8/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4f0de499-6366-486d-ada3-66339d17ead8/storage_v2/_src_/schema/prepojectcrud.DL4JQA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/Admin/AddUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/Admin/AddUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/Admin/EditServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/Admin/EditServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/Admin/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/Admin/AdminMainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/User/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/User/UserMainServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserHibernateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserHibernateDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserJdbcDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserJdbcDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filter/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/UserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/DBHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/DBHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/AdminPages/EditUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/AdminPages/EditUserPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AdminPages/EditUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AdminPages/EditUserPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/AddUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/AddUserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/EditServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/EditServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/Admin/MainServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/Servlets/User/MainServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserDaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserHibernateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserHibernateDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserJdbcDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserJdbcDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/filter/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/filter/UserFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/util/DBHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/Admin/AddUserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/Admin/AddUserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/Admin/EditServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/Admin/EditServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/Admin/MainServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Servlets/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Servlets/User/MainServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserDaoFactory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/dao/UserHibernateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserHibernateDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserJdbcDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserJdbcDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filter/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filter/UserFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/util/DBHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/util/DBHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -300,8 +253,16 @@
       <workItem from="1586690272769" duration="10428000" />
       <workItem from="1586783480473" duration="2346000" />
       <workItem from="1586849151106" duration="2162000" />
-      <workItem from="1586853067934" duration="13248000" />
+      <workItem from="1586853067934" duration="14615000" />
     </task>
+    <task id="LOCAL-00001" summary="Completed all tasks of the mentor">
+      <created>1586867272209</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586867272209</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +280,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Completed all tasks of the mentor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed all tasks of the mentor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
