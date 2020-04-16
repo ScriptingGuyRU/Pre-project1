@@ -24,7 +24,7 @@
 <form action="/admin/addUser" method="POST">
     Name :<input type="text" name="name" required>
     Password :<input type="text" name="password" required>
-    <select size="2" name="role">
+    <select name="role">
         <option disabled>Role :</option>
         <option selected value="admin">Admin</option>
         <option selected value="user">User</option>

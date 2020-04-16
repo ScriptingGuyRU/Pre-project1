@@ -35,15 +35,18 @@ public class LoginFilter implements Filter {
 
 
         if (userRole.equals("user")){
-            resp.sendRedirect("/user/");
+            //resp.sendRedirect("/user/");
+            chain.doFilter(request,response);
         }
 
         if (userRole.equals("admin")){
-            resp.sendRedirect("/admin/");
+//            resp.sendRedirect("/admin/");
+            chain.doFilter(request,response);
         }
 
         if (userRole == null) {
-            resp.sendRedirect("/");
+            resp.sendRedirect("/logout/");
+//            chain.doFilter(request,response);
         }
 
 

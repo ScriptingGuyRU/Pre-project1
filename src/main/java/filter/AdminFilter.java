@@ -34,7 +34,7 @@ public class AdminFilter implements Filter {
 
 
         if (userRole.equals("user")){
-            resp.sendRedirect("/user/");
+            resp.sendRedirect("/logout");
         }
 
         if (userRole.equals("admin")){

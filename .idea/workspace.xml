@@ -8,11 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserHibernateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserHibernateDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/LogOutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/LogOutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/LoginFilterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/LoginFilterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/AdminFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserHibernateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/dao/UserHibernateDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserHibernateDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/UserHibernateDAO.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +253,10 @@
       <workItem from="1586690272769" duration="10428000" />
       <workItem from="1586783480473" duration="2346000" />
       <workItem from="1586849151106" duration="2162000" />
-      <workItem from="1586853067934" duration="14615000" />
+      <workItem from="1586853067934" duration="14924000" />
+      <workItem from="1586943613368" duration="333000" />
+      <workItem from="1587025632012" duration="1522000" />
+      <workItem from="1587029394452" duration="769000" />
     </task>
     <task id="LOCAL-00001" summary="Completed all tasks of the mentor">
       <created>1586867272209</created>
@@ -262,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586867272209</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Small fix">
+      <created>1586869977294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586869977294</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,19 +293,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed all tasks of the mentor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed all tasks of the mentor" />
+    <MESSAGE value="Small fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/Servlets/LoginServlet.java</url>
-          <line>27</line>
-          <properties class="Servlets.LoginServlet" method="doPost">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/filter/UserFilter.java</url>
           <line>13</line>
