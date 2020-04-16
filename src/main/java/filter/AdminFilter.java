@@ -7,9 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-//@WebFilter(urlPatterns = "/admin/*",
-//        filterName = "adminFilter",
-//        description = "filter by admin")
+
 @WebFilter("/admin/*")
 public class AdminFilter implements Filter {
 
@@ -32,20 +30,11 @@ public class AdminFilter implements Filter {
 
         String userRole = (String) session.getAttribute("role");
 
-
-        if (userRole.equals("user")){
-            resp.sendRedirect("/logout");
-        }
-
         if (userRole.equals("admin")){
             chain.doFilter(request,response);
             return;
+        } else {
+            resp.sendRedirect("/logout");
         }
-
-        if (userRole == null) {
-            resp.sendRedirect("/");
-        }
-
-
     }
 }

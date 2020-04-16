@@ -18,11 +18,4 @@ public class LogOutServlet extends HttpServlet {
         session.invalidate();
         resp.sendRedirect("/");
     }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        session.invalidate();
-        resp.sendRedirect("/");
-    }
 }
