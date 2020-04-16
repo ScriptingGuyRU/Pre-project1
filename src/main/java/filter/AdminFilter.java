@@ -32,7 +32,6 @@ public class AdminFilter implements Filter {
 
         if (userRole.equals("admin")){
             chain.doFilter(request,response);
-            return;
         } else {
             resp.sendRedirect("/logout");
         }

@@ -13,7 +13,7 @@
 <body>
 <p> Hello: <%= request.getSession().getAttribute("name")%> </p>
     <p>Date login: <%= new Date().toString() %></p>
-    <form action="/logout" method="post">
+    <form action="/logout" method="get">
         <a href="/logout"></a>
         <button type="submit">LogOut</button>
     </form>

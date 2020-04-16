@@ -7,14 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f432dea-67b2-4c1a-9bbd-4f236ffbbe68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/LogOutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/LogOutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/LoginFilterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/LoginFilterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/filter/AdminFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/AdminFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filter/LoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/LoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/filter/UserFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/UserFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/AdminPages/AdminMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/AdminPages/AdminMainPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/UsersPages/UserMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/UsersPages/UserMainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AdminPages/AddUserPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AdminPages/AddUserPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AdminPages/AdminMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/AdminPages/AdminMainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/UsersPages/UserMainPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/UsersPages/UserMainPage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/filter/UserFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Pre-Project_CRUD-1.0-SNAPSHOT/WEB-INF/classes/filter/UserFilter.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +256,7 @@
       <workItem from="1586853067934" duration="14924000" />
       <workItem from="1586943613368" duration="333000" />
       <workItem from="1587025632012" duration="1522000" />
-      <workItem from="1587029394452" duration="2091000" />
+      <workItem from="1587029394452" duration="2895000" />
     </task>
     <task id="LOCAL-00001" summary="Completed all tasks of the mentor">
       <created>1586867272209</created>
@@ -288,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587030424220</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Small fix with filter">
+      <created>1587031584356</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587031584356</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +325,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Completed all tasks of the mentor" />
     <MESSAGE value="Small fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small fix" />
+    <MESSAGE value="Small fix with filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fix with filter" />
   </component>
 </project>
